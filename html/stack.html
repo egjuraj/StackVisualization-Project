@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="stack.css">
+    <script src="stack.js"></script>
+
+    <title>Stack Visualization</title>
+</head>
+<body style="background-color: #87CEEB; ;background-size: cover; background-repeat: no-repeat;"></body>
+    <h1 id="stack-title">Stack Visualization</h1>
+    <p id="stack-description">A stack is an abstract data type that follows the Last-In-First-Out (LIFO) principle. It is a linear data structure in which elements
+        are added or removed from the top,known as the "top of the stack."</p>
+    <p id="ImplementationOfStack">Implementation of stack using array</p>
+    <p id="elementInput">Enter the values to perform Stack Operations</p>
+    <input type="text" id="inputBox" placeholder="Enter an element">
+
+<div style="height: 15px;"></div>
+<button id="pushButton" onclick="push()">Push</button>
+<button id="popButton" onclick="pop()">Pop</button>
+<div style="height: 10px;"></div>
+<button id="peekButton" onclick="peek()">Peek</button>
+<div class="big-rectangle">
+    <div class="stack-position" id="position-1"></div>
+        <div class="stack-position" id="position-2"></div>
+        <div class="stack-position" id="position-3"></div>
+        <div class="stack-position" id="position-4"></div>
+        <div class="stack-position" id="position-5"></div>
+        <div class="stack-position" id="position-6"></div>
+        <div class="stack-position" id="position-7"></div>
+        <div class="stack-position" id="position-8"></div>
+        <div class="stack-position" id="position-9"></div>
+        <div class="stack-position" id="position-10"></div>
+        <div class="stack-position" id="position-11"></div>
+        <div class="stack-position" id="position-12"></div>
+        <div class="stack-position" id="position-13"></div>
+        <div class="stack-position" id="position-14"></div>
+        <div class="stack-position" id="position-15"></div>
+
+
+</div>
+<div class="Evenbox">Events</div>
+<div style="height: 25px;"></div>
+<div class="ConfirmPush">
+    The pushed element is: <span id="pushedElement"></span> 
+</div>
+<div style="height: 15px;"></div>
+<div class="ConfirmPop">
+    The popped element is: <span id="poppedElement"></span>
+</div>
+<div style="height: 15px;"></div>
+<div class="ConfirmPeek">
+    The peek element is: <span id="peekedElement"></span>
+</div>
+<div id="algo-box">
+        <li id="current_algo" class="algo-steps">
+           Here you can find the algorithm to push,pop and peek an element from stack.<br>
+        </li> 
+</div>
+</body>
+</html>
