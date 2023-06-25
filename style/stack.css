@@ -1,0 +1,549 @@
+#stack-title{
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color:black;
+}
+
+#stack-title{
+    text-align: center;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    color:black;
+}
+#ImplementationOfStack{
+   font-style: italic;
+    white-space: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#algo-box{
+    margin: 30px;
+    margin-top: -150px;
+    padding: 10px 30px;
+    height: 250px;
+    width: 450px;
+    max-width: 500px;
+    background: rgba(0, 185, 43, 0.2);
+    color:pblack;
+    font-family: cursive;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #000c00a8,
+                -2px -2px 10px #3aff4428;
+    overflow:auto;
+    border: 2px solid #00ff00; /* Set the base border color to green */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    animation: glow 1s infinite;
+    text-align: center;
+    text-decoration: double;
+  }
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
+    }
+    50% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
+    }}
+  .algo-steps{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 28px;
+  }
+#text-description{
+    text-align: center;
+    white-space: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#inputBox{
+    width: 130px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: azure;
+    padding: 10px;
+    margin-left: 110px;
+}
+#elementInput{
+    margin-left: -1000px;
+    font-size: 15px;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    text-align: center; 
+}
+#pushButton,#popButton{
+    width: 90px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 70px;
+    text-align: center;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+#popButton{
+    background-color:red;
+}
+#pushButton{
+    background-color:lawngreen;
+}
+#peekButton{
+    width: 90px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display:flexbox;
+    text-align: center;
+    background-color: orange;
+    margin-left:135px;
+    cursor: pointer;
+}
+.big-rectangle {
+    top: 80px; 
+    right: 90px; 
+    width: 200px;
+    height: 410px;
+    background-color:rgba(0, 185, 43, 0.2) ; 
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 200px;
+    position:fixed;
+    margin-right: 100px;
+    
+    margin: 5px;
+    margin-top: 150px;
+    padding: 20px 30px;
+    max-width: 500px;;
+    box-shadow: 5px 5px 10px #000c00a8, -2px -2px 10px #3aff4428;
+    border: 2px solid #00ff00; 
+    border-radius: 5px; 
+    animation: glow 1s infinite;
+  }
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
+    }
+    50% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
+    }} 
+  .stack-position {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+}
+
+.stack-position:nth-child(1) {
+    top: 0;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    
+}
+
+.stack-position:nth-child(2) {
+    top: 30px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(3) {
+    top: 60px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(4) {
+    top: 90px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(5) {
+    top: 120px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(6) {
+    top: 150px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(7) {
+    top: 180px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(8) {
+    top: 210px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(9) {
+    top: 240px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(10) {
+    top: 270px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.stack-position:nth-child(11) {
+    top: 300px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.stack-position:nth-child(12) {
+    top: 330px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.stack-position:nth-child(13) {
+    top: 360px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.stack-position:nth-child(14) {
+    top: 390px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+  .Evenbox{
+    width: 130px;
+    height: 20px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 10px #000c00a8,
+    -2px -2px 10px #3aff4428;
+    border-radius: 10px;
+    background-color:  rgba(0, 185, 43, 0.2);
+    padding: 10px;
+    font-size: 17px;
+    font-family: cursive;
+    text-align: center; margin: 5px;
+   margin-left: 725px;
+  }
+  .ConfirmPush,.ConfirmPop,.ConfirmPeek{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display:grid;
+    margin-left: 700px;
+    text-align: center;
+    
+  }
+  .ConfirmPush {
+    display: inline-block;
+}
+
+.ConfirmPush span {
+    display: inline;
+}
+.ConfirmPop {
+    display: inline-block;
+}
+
+.ConfirmPop span {
+    display: inline;
+}
+
+.ConfirmPeek {
+    display: inline-block;
+}
+
+.ConfirmPeek span {
+    display: inline;
+}
+
+  .ConfirmPush{
+    background-color:lawngreen;
+  }
+  .ConfirmPop{
+    background-color: red;
+  }
+  .ConfirmPeek{
+    background-color: orange;
+  }
+  
+
+
+#ImplementationOfStack{
+   font-style: italic;
+    white-space: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+#algo-box{
+    margin: 30px;
+    margin-top: -150px;
+    padding: 10px 30px;
+    height: 250px;
+    width: 450px;
+    max-width: 500px;
+    background: rgba(0, 185, 43, 0.2);
+    color:pblack;
+    font-family: cursive;
+    border-radius: 25px;
+    box-shadow: 5px 5px 10px #000c00a8,
+                -2px -2px 10px #3aff4428;
+    overflow:auto;
+    border: 2px solid #00ff00; /* Set the base border color to green */
+    border-radius: 5px; /* Optional: Add border radius for rounded corners */
+    animation: glow 1s infinite;
+    text-align: center;
+    text-decoration: double;
+  }
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
+    }
+    50% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
+    }}
+  .algo-steps{
+    list-style-type: none;
+    font-size: 20px;
+    font-weight: 700px;
+    line-height: 28px;
+  }
+#text-description{
+    text-align: center;
+    white-space: normal;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+#inputBox{
+    width: 130px;
+    height: 20px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: azure;
+    padding: 10px;
+    margin-left: 110px;
+}
+#elementInput{
+    margin-left: -1000px;
+    font-size: 15px;
+    font-family: Verdana, Arial, Helvetica, sans-serif; 
+    text-align: center; 
+}
+#pushButton,#popButton{
+    width: 90px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display: inline-block;
+    margin-left: 70px;
+    text-align: center;
+    margin-right: -30px;
+    cursor: pointer;
+}
+
+#popButton{
+    background-color:red;
+}
+#pushButton{
+    background-color:lawngreen;
+}
+#peekButton{
+    width: 90px;
+    height: 25px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display:flexbox;
+    text-align: center;
+    background-color: orange;
+    margin-left:135px;
+    cursor: pointer;
+}
+.big-rectangle {
+    top: 80px; 
+    right: 90px; 
+    width: 200px;
+    height: 410px;
+    background-color:rgba(0, 185, 43, 0.2) ; 
+    border: 1px solid #000;
+    border-radius: 10px;
+    margin-top: 200px;
+    position:fixed;
+    margin-right: 100px;
+    
+    margin: 5px;
+    margin-top: 150px;
+    padding: 20px 30px;
+    max-width: 500px;;
+    box-shadow: 5px 5px 10px #000c00a8, -2px -2px 10px #3aff4428;
+    border: 2px solid #00ff00; 
+    border-radius: 5px; 
+    animation: glow 1s infinite;
+  }
+  @keyframes glow {
+    0% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
+    }
+    50% {
+      box-shadow: none;
+    }
+    100% {
+      box-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 35px #00ff00, 0 0 40px #00ff00, 0 0 50px #00ff00, 0 0 75px #00ff00;
+    }} 
+  .stack-position {
+    width: 100%;
+    height: 30px;
+    position: absolute;
+    left: 0;
+}
+
+.stack-position:nth-child(1) {
+    top: 0;
+    text-align: center;
+    border-bottom: 1px solid #000;
+    
+}
+
+.stack-position:nth-child(2) {
+    top: 30px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(3) {
+    top: 60px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(4) {
+    top: 90px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(5) {
+    top: 120px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(6) {
+    top: 150px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(7) {
+    top: 180px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(8) {
+    top: 210px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(9) {
+    top: 240px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+.stack-position:nth-child(10) {
+    top: 270px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.stack-position:nth-child(11) {
+    top: 300px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.stack-position:nth-child(12) {
+    top: 330px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.stack-position:nth-child(13) {
+    top: 360px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+.stack-position:nth-child(14) {
+    top: 390px;
+    text-align: center;
+    border-bottom: 1px solid #000;
+}
+
+  .Evenbox{
+    width: 130px;
+    height: 20px;
+    border: 1px solid #000;
+    box-shadow: 5px 5px 10px #000c00a8,
+    -2px -2px 10px #3aff4428;
+    border-radius: 10px;
+    background-color:  rgba(0, 185, 43, 0.2);
+    padding: 10px;
+    font-size: 17px;
+    font-family: cursive;
+    text-align: center; margin: 5px;
+   margin-left: 725px;
+  }
+  .ConfirmPush,.ConfirmPop,.ConfirmPeek{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    display:grid;
+    margin-left: 700px;
+    text-align: center;
+    
+  }
+  .ConfirmPush {
+    display: inline-block;
+}
+
+.ConfirmPush span {
+    display: inline;
+}
+.ConfirmPop {
+    display: inline-block;
+}
+
+.ConfirmPop span {
+    display: inline;
+}
+
+.ConfirmPeek {
+    display: inline-block;
+}
+
+.ConfirmPeek span {
+    display: inline;
+}
+
+  .ConfirmPush{
+    background-color:lawngreen;
+  }
+  .ConfirmPop{
+    background-color: red;
+  }
+  .ConfirmPeek{
+    background-color: orange;
+  }
+  
